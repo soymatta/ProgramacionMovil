@@ -32,21 +32,34 @@ p {
   color: #333;
 }
 
-.git-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.pokeball {
   height: 200px;
   width: 200px;
+  position: relative;
+  margin: 0 auto;
 }
-.git-letter {
+.pokeball .upper-half {
+  height: 50%;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 50% 50% 0% 0%;
+  position: absolute;
+  top: 0;
+}
+.pokeball .lower-half {
+  height: 50%;
+  width: 100%;
+  background-color: #CE1126;
+  border-radius: 0% 0% 50% 50%;
+  position: absolute;
+  bottom: 0;
+}
+.pokeball .circle {
+  height: 80px;
+  width: 80px;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  background-color: #f05033;
-  color: #ffffff;
-  font-size: 120px;
-  height: 200px;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 60px;
+  left: 60px;
 }
